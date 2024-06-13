@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link
+        href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+            font-family: Montserrat;
+        }
+        body{
+            margin: 0;
+        }
+
+        .card {
+            display: flex;
+            border: 2px solid green;
+            height: 90vh;
+        }
+
+        .prod-img {
+            border: 2px solid red;
+            width: 50%;
+            background-image: url('https://media.wired.com/photos/6511aab1189c419c40374c92/16:9/w_2400,h_1350,c_limit/Apple-Watch-Ultra-2-Alt-Gear.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .prod-content {
+            border: 2px solid blue;
+            width: 50%;
+            padding: 50px;
+        }
+
+        .detail {
+            display: flex;
+            gap: 20px;
+        }
+
+        .detail-name {
+            font-weight: bold;
+        }
+
+        .prod-price {
+            font-weight: bold;
+            font-size: 40px;
+        }
+
+        .cart-btn {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            border: none;
+            
+        }
+        .fav-btn{
+            color: white;
+            background-color: red;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="card">
+        <div class="prod-img">
+            <h2>Product Image</h2>
+        </div>
+        <div class="prod-content">
+            <h4 class="brand">CITIZEN</h4>
+            <h2>AXIOM</h2>
+            <p>Model AX878-54E</p>
+            <hr>
+
+            <div class="detail">
+                <p class="detail-name">MOVEMENT</p>
+                <p class="detail-value">Eco-Drive H504</p>
+            </div>
+            <div class="detail">
+                <p class="detail-name">Case Size</p>
+                <p class="detail-value">43 mm</p>
+            </div>
+            <div class="detail">
+                <p class="detail-name">color</p>
+                <p class="detail-value">gray</p>
+
+            </div>
+            <hr>
+            <p class="prod-price">₹2399</p>
+            <div class="btn-group">
+                <button class="cart-btn">ADD TO CART</button>
+                <button class="fav-btn">
+                    <i class="fa-regular fa-heart"></i>
+                </button>
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
